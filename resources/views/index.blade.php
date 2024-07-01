@@ -37,16 +37,14 @@
             </a>
         </address>
     </main>
+
     
+   
     @include('components.section-container', [
-      'title' => 'About Me',
-      'content' => view('components.about')->render()
+        'title' => 'About Me',
+        'content' => $about
     ])
 
-    @include('components.section-container', [
-      'title' => 'Work Experience',
-      'content' => view('components.experience')->render()
-    ])
 
     <section>
         <h3>@include('icons/caret-svg') Education</h3>
