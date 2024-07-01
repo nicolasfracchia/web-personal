@@ -37,17 +37,21 @@
             </a>
         </address>
     </main>
-
-    @include('components/about-me')
-
-    @include('components/experience')
-
     
+    @include('components.section-container', [
+      'title' => 'About Me',
+      'content' => view('components.about')->render()
+    ])
+
+    @include('components.section-container', [
+      'title' => 'Work Experience',
+      'content' => view('components.experience')->render()
+    ])
 
     <section>
         <h3>@include('icons/caret-svg') Education</h3>
         <div>
-            <h4>Course in React – Hooks, Router, Redux, NextJS</h4>
+            <h4>Course in React - Hooks, Router, Redux, NextJS</h4>
             <label>Udemy - Distance learning</label>
             <label>January 2022 - March 2022</label>
         </div>
