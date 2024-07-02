@@ -39,11 +39,9 @@
     </main>
 
     
-   
-    @include('components.section-container', [
-        'title' => 'About Me',
-        'content' => $about
-    ])
+    @if (isset($about) && !empty($about))
+        @include('components.section-container', ['title' => 'About Me','content' => $about])
+    @endif
 
 
     <section>
