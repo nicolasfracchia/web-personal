@@ -12,7 +12,7 @@ class ExperienceController extends Controller
 {
     public function showExperience(): View
     {
-        $experience = Experience::all();
+        $experience = Experience::with('experienceItems')->get();
         return view('components.experience', compact('experience'));
     }
 }

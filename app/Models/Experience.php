@@ -15,4 +15,10 @@ class Experience extends Model
      * @var bool
      */
     public $timestamps = true;
+
+    // Relationship with ExperienceItems
+    public function experienceItems()
+    {
+        return $this->hasMany(ExperienceItem::class, 'experience_id');
+    }
 }
