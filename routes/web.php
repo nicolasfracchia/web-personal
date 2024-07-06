@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ExperienceController;
 use App\Http\Controllers\EducationController;
+use App\Http\Controllers\SkillsController;
  
 
 
@@ -22,11 +23,13 @@ use App\Http\Controllers\EducationController;
 Route::get('/', function (
     AboutController $aboutController, 
     ExperienceController $experienceController,
-    EducationController $educationController
+    EducationController $educationController,
+    SkillsController $skillsController
 ) {
     return view('index', [
         'about' => $aboutController->showAbout(),
         'experience' => $experienceController->showExperience(),
-        'education' => $educationController->showEducation()
+        'education' => $educationController->showEducation(),
+        'skills' => $skillsController->showSkills()
     ]);
 });

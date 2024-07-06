@@ -50,6 +50,10 @@
     @if (isset($education) && !empty($education))
         @include('components.section-container', ['title' => 'Education','content' => $education])
     @endif
+    
+    @if (isset($skills) && !empty($skills))
+        @include('components.section-container', ['title' => 'Skills','content' => $skills])
+    @endif
 
 
 
