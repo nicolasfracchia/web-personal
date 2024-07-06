@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ExperienceController;
  
 
 
@@ -17,8 +18,9 @@ use App\Http\Controllers\AboutController;
 |
 */
 
-Route::get('/', function (AboutController $aboutController) {
+Route::get('/', function (AboutController $aboutController, ExperienceController $experienceController) {
     return view('index', [
-        'about' => $aboutController->showAbout()
+        'about' => $aboutController->showAbout(),
+        'experience' => $experienceController->showExperience()
     ]);
 });

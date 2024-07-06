@@ -42,6 +42,10 @@
     @if (isset($about) && !empty($about))
         @include('components.section-container', ['title' => 'About Me','content' => $about])
     @endif
+    
+    @if (isset($experience) && !empty($experience))
+        @include('components.section-container', ['title' => 'Experience','content' => $experience])
+    @endif
 
 
     <section>
