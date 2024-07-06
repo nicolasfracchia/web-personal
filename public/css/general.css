@@ -121,7 +121,7 @@ section h3 svg{
 }
 section div{
     height: 'fit-content';
-    max-height:50dvh;
+    /* max-height:50dvh; */
     padding:5dvh 5dvw;
     overflow: hidden;
     transition: .3s;
