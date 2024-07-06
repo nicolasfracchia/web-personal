@@ -1,7 +1,12 @@
 @foreach ($skills as $s)
-   
-    <h4>{{ $s->name }}</h4>
-    <label>{{ $s->years }}</label>
-    <p>{{ $s->level }}</p>
+
+    <div class="skills-container">
+        <h4>{{ $s->name }}</h4>
+        <div class="bar-container">
+            <div class="bar" style="width:{{ $s->level }}%"></div>
+        </div>
+        
+        <label>{{ $s->formatted_years }}</label>
+    </div>
 
 @endforeach

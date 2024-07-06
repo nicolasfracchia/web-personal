@@ -140,3 +140,42 @@ section.closed div{
     max-height:0;
     padding:0 5dvw;
 }
+
+/* SKILLS (80dvw) */
+section div div.skills-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1dvw 1dvh;
+    margin:0;
+    border-radius: 10px;
+    transition: .3s;
+}
+section div div.skills-container:hover{
+    background-color: var(--primaryContrast);
+    transform: scale(1.1);
+
+}
+section div div.skills-container h4{
+    width:20dvw;
+    margin:0;
+}
+section div div.skills-container div.bar-container{
+    display: flex;
+    width:40dvw;
+    height: 2dvh;
+    background-color: var(--lightgray);
+    padding: 0;
+    margin:0;
+    border-radius:10px;
+}
+section div div.skills-container div.bar-container div.bar{
+    background-color: var(--secondary);
+    padding: 0;
+    margin:0;
+    border-radius:10px;
+}
+section div div.skills-container label{
+    width:20dvw;
+    text-align: right;
+}
