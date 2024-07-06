@@ -46,20 +46,10 @@
     @if (isset($experience) && !empty($experience))
         @include('components.section-container', ['title' => 'Experience','content' => $experience])
     @endif
-
-
-    <section>
-        <h3>@include('icons/caret-svg') Education</h3>
-        <div>
-            <h4>Course in React - Hooks, Router, Redux, NextJS</h4>
-            <label>Udemy - Distance learning</label>
-            <label>January 2022 - March 2022</label>
-        </div>
-    </section>
-
-
-
-
+    
+    @if (isset($education) && !empty($education))
+        @include('components.section-container', ['title' => 'Education','content' => $education])
+    @endif
 
 
 

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ExperienceController;
+use App\Http\Controllers\EducationController;
  
 
 
@@ -18,9 +19,14 @@ use App\Http\Controllers\ExperienceController;
 |
 */
 
-Route::get('/', function (AboutController $aboutController, ExperienceController $experienceController) {
+Route::get('/', function (
+    AboutController $aboutController, 
+    ExperienceController $experienceController,
+    EducationController $educationController
+) {
     return view('index', [
         'about' => $aboutController->showAbout(),
-        'experience' => $experienceController->showExperience()
+        'experience' => $experienceController->showExperience(),
+        'education' => $educationController->showEducation()
     ]);
 });
