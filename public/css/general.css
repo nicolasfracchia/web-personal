@@ -213,7 +213,7 @@ section.closed div{
 }
 
 /* SKILLS (80dvw) */
-section div div.skills-container{
+section div article.skills-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -222,16 +222,16 @@ section div div.skills-container{
     border-radius: 10px;
     transition: .3s;
 }
-section div div.skills-container:hover{
+section div article.skills-container:hover{
     background-color: var(--primaryContrast);
     transform: scale(1.1);
 
 }
-section div div.skills-container h3{
+section div article.skills-container h3{
     width:20dvw;
     margin:0;
 }
-section div div.skills-container div.bar-container{
+section div article.skills-container div.bar-container{
     display: flex;
     width:40dvw;
     height: 2dvh;
@@ -240,13 +240,13 @@ section div div.skills-container div.bar-container{
     margin:0;
     border-radius:10px;
 }
-section div div.skills-container div.bar-container div.bar{
+section div article.skills-container div.bar-container div.bar{
     background-color: var(--secondary);
     padding: 0;
     margin:0;
     border-radius:10px;
 }
-section div div.skills-container label{
+section div article.skills-container label{
     width:20dvw;
     text-align: right;
 }
