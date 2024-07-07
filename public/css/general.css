@@ -72,7 +72,7 @@ main address{
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
 }
-main address h3{
+main address h2{
     display: none;
 }
 main address a{
@@ -121,7 +121,7 @@ main address a:hover svg{
         overflow: hidden;
         background-color: var(--white);
     }
-    main address h3{
+    main address h2{
         display: block;
         margin: 0;
         padding: 3dvh 3dvw;
@@ -131,7 +131,7 @@ main address a:hover svg{
         cursor: pointer;
         transition: .3s;
     }
-    main address h3 svg{
+    main address h2 svg{
         width:var(--font-size-titles);
         fill: var(--primary);
         transition: .3s;
@@ -152,11 +152,11 @@ main address a:hover svg{
         vertical-align: bottom;
         transition: .3s;
     }
-    address.closed h3{
+    address.closed h2{
         color: var(--primaryContrast);
         background-color:var(--primary);
     }
-    address.closed h3 svg{
+    address.closed h2 svg{
         fill: var(--primaryContrast);
         transform: rotate(-90deg);
     }
@@ -176,7 +176,7 @@ section{
     box-shadow: 0px 1px 10px 1px var(--primaryContrast);
     overflow: hidden;
 }
-section h3{
+section h2{
     margin:0;
     padding:3dvh 3dvw;
     font-size:var(--font-size-titles);
@@ -185,7 +185,7 @@ section h3{
     cursor: pointer;
     transition: .3s;
 }
-section h3 svg{
+section h2 svg{
     width:var(--font-size-titles);
     fill: var(--primary);
     transition: .3s;
@@ -199,11 +199,11 @@ section div{
 }
 
 /* SECTIONS CLOSED */
-section.closed h3{
+section.closed h2{
     color: var(--primaryContrast);
     background-color:var(--primary);
 }
-section.closed h3 svg{
+section.closed h2 svg{
     fill: var(--primaryContrast);
     transform: rotate(-90deg);
 }
@@ -227,7 +227,7 @@ section div div.skills-container:hover{
     transform: scale(1.1);
 
 }
-section div div.skills-container h4{
+section div div.skills-container h3{
     width:20dvw;
     margin:0;
 }

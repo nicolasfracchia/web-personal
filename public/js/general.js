@@ -1,8 +1,8 @@
 /* ***** TOGGLE CONTENT FUNCTIONS ***** */
-const h3s = document.querySelectorAll("h3");
+const h2s = document.querySelectorAll("h2");
 
-h3s.forEach(h3 => {
-    h3.addEventListener("click", () => toggleContent(h3));
+h2s.forEach(h2 => {
+    h2.addEventListener("click", () => toggleContent(h2));
 });
 
 function toggleContent(element) {
