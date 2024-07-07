@@ -4,7 +4,7 @@
 
 <title>@include('head.title')</title>
 <meta name="description" content="@include('head.description')">
-<link rel="shortcut icon" href="favicon.ico" />
+<link rel="shortcut icon" href="{{asset('favicon.ico')}}" />
 
 <meta property="og:title" content="@include('head.title')">
 <meta property="og:description" content="@include('head.description')">
