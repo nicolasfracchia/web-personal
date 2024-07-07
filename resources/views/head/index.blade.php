@@ -18,4 +18,6 @@
 <meta name="twitter:site" content="{{ Request::url() }}">
 <meta name="twitter:image" content="{{asset('profile.jpg')}}">
 
+@include('head.schema-markup')
+
 <link rel="stylesheet" href="{{asset('css/general.css')}}">
