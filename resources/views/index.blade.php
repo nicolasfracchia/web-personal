@@ -4,6 +4,16 @@
     @include('head.index')
 </head>
 <body>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRDQ3ST8BH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-FRDQ3ST8BH');
+    </script>
     
     @include('components.main-header')
     
