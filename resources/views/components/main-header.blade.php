@@ -7,7 +7,7 @@
         <h2>Full-Stack Software Developer</h2>
     </header>
     <address>
-        <h3> @include('icons/caret-svg') Contact information</h3>
+        <h2> @include('icons/caret-svg') Contact information</h2>
         <a href='https://maps.app.goo.gl/rHaMfQvnjFhhTt11A' target="_blank">
             @include('icons/location-svg') 
             Calgary, Alberta, canada.

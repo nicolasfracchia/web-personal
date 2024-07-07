@@ -1,5 +1,5 @@
 <section>
-    <h3>@include('icons/caret-svg') {{ $title }}</h3>
+    <h2>@include('icons/caret-svg') {{ $title }}</h2>
     <div>
         {!! $content !!}
     </div>
