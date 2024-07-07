@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NICOLAS FRACCHIA | Full-Stack Software Developer | Calgary</title>
-    <meta name="description" content="Full-Stack Developer with 10+ years of experience | Custom E-commerce & Reports Developer | JavaScript, PHP, MySQL, Back-End Optimization.">
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="{{asset('css/general.css')}}">
+    @include('head.index')
 </head>
 <body>
     
