@@ -30,6 +30,8 @@ Route::get('/', function (
         'about' => $aboutController->showAbout(),
         'experience' => $experienceController->showExperience(),
         'education' => $educationController->showEducation(),
-        'skills' => $skillsController->showSkills()
+        'skills' => $skillsController->showSkills(),
+        'experienceSM' => $experienceController->experienceInfo(),
+        'educationSM' => $educationController->educationInfo()
     ]);
 });
