@@ -72,6 +72,9 @@ main address{
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
 }
+main address h3{
+    display: none;
+}
 main address a{
     text-decoration: none;
     color:var(--white);
@@ -94,6 +97,74 @@ main address a svg{
 }
 main address a:hover svg{
     fill:var(--primary);
+}
+
+@media only screen and (max-width: 768px) {
+    main header{
+        flex-direction: column;
+    }
+    main header figure,
+    main header figure img{
+        height: 15dvh;
+    }
+    main header h1, 
+    main header h2{
+        text-align: center;
+    }
+    main address{
+        display: block;
+        width: 90dvw;
+        padding: 0;
+        margin: 5dvh auto;
+        border-radius: 10px;
+        box-shadow: 0px 1px 10px 1px var(--primaryContrast);
+        overflow: hidden;
+        background-color: var(--white);
+    }
+    main address h3{
+        display: block;
+        margin: 0;
+        padding: 3dvh 3dvw;
+        font-size: var(--font-size-titles);
+        color: var(--primary);
+        background-color: var(--primaryContrast);
+        cursor: pointer;
+        transition: .3s;
+    }
+    main address h3 svg{
+        width:var(--font-size-titles);
+        fill: var(--primary);
+        transition: .3s;
+    }
+    main address a,
+    main address a:hover{
+        display: block;
+        width: 100%;
+        color: var(--primary);
+        transform: scale(1);
+        background-color: none;
+        margin:1dvh 0;
+    }
+    main address a svg{
+        fill: var(--primary);
+        width: var(--icon-size-address);
+        margin-right: 7px;
+        vertical-align: bottom;
+        transition: .3s;
+    }
+    address.closed h3{
+        color: var(--primaryContrast);
+        background-color:var(--primary);
+    }
+    address.closed h3 svg{
+        fill: var(--primaryContrast);
+        transform: rotate(-90deg);
+    }
+    address.closed a{
+        max-height:0;
+        margin:0;
+        padding:0;
+    }
 }
 
 /** SECTIONS **/
