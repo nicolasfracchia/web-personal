@@ -22,7 +22,7 @@ html,body{
 
 *{
     box-sizing: border-box;
-    font-family:cursive;
+    font-family:"Barlow", sans-serif;
 }
 
 /** SCROLL BAR **/ 
