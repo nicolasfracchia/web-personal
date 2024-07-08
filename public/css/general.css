@@ -212,7 +212,7 @@ section.closed div{
     padding:0 5dvw;
 }
 
-/* SKILLS (80dvw) */
+/* SKILLS (75dvw) */
 section div article.skills-container{
     display: flex;
     justify-content: space-between;
@@ -249,4 +249,15 @@ section div article.skills-container div.bar-container div.bar{
 section div article.skills-container label{
     width:20dvw;
     text-align: right;
+}
+@media only screen and (max-width: 768px) {
+    section div article.skills-container{
+        flex-wrap: wrap;
+    }
+    section div article.skills-container h3{
+        width: auto;
+    }
+    section div article.skills-container label{
+        width:75dvw;
+    }
 }
