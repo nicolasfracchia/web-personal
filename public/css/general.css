@@ -1,0 +1,263 @@
+:root{
+    --primary: #0565b9;
+    --primaryContrast: #def2fe;
+    --secondary: #2b83cf;
+    --secondaryContrast: #333333;
+    --tertiary: #51acfb;
+    --white: #FFFFFF;
+    --gray: #373738;
+    --lightgray: #c3c3c3;
+    --font-size-header: 2rem;
+    --font-size-address: .85rem;
+    --icon-size-address: 1rem;
+    --font-size-titles: 1.5rem;
+}
+
+html,body{
+    margin:0;
+    padding:0;
+    min-width: 100%;
+    min-height:100%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family:"Barlow", sans-serif;
+}
+
+/** SCROLL BAR **/ 
+body{scrollbar-color: var(--secondary) var(--secondaryContrast);}
+*::-webkit-scrollbar{width: 10px;}
+*::-webkit-scrollbar-track {background: var(--secondaryContrast);}
+*::-webkit-scrollbar-thumb {background-color: var(--secondary);border-radius: 10px;}
+
+/** MAIN **/
+main{
+    padding:0;
+    margin:0;
+}
+main header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2dvh 5dvw;
+    background-color: var(--primary);
+}
+main header figure{
+    margin:0;
+    padding:0;
+    height: 5dvh;
+    min-height: 50px;
+}
+main header figure img{
+    height:5dvh;
+    min-height: 50px;
+    border-radius:50%;
+}
+main header h1,
+main header h2{
+    margin:0;
+    padding:0;
+    color: var(--white);
+    font-weight:bold;
+    font-size: var(--font-size-header);
+}
+main address{
+    display: flex;
+    justify-content: space-around;
+    width:75dvw;
+    margin:0 auto;
+    padding:1dvh 0;
+    background-color: var(--primary);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+main address h2{
+    display: none;
+}
+main address a{
+    text-decoration: none;
+    color:var(--white);
+    font-size: var(--font-size-address);
+    padding:5px 15px;
+    border-radius:10px;
+    transition:.3s;
+}
+main address a:hover{
+    background-color: var(--white);
+    color: var(--primary);
+    transform: scale(1.3);
+}
+main address a svg{
+    fill:var(--white);
+    width: var(--icon-size-address);
+    margin-right:7px;
+    vertical-align: bottom;
+    transition:.3s;
+}
+main address a:hover svg{
+    fill:var(--primary);
+}
+
+@media only screen and (max-width: 768px) {
+    main header{
+        flex-direction: column;
+    }
+    main header figure,
+    main header figure img{
+        height: 15dvh;
+    }
+    main header h1, 
+    main header h2{
+        text-align: center;
+    }
+    main address{
+        display: block;
+        width: 90dvw;
+        padding: 0;
+        margin: 5dvh auto;
+        border-radius: 10px;
+        box-shadow: 0px 1px 10px 1px var(--primaryContrast);
+        overflow: hidden;
+        background-color: var(--white);
+    }
+    main address h2{
+        display: block;
+        margin: 0;
+        padding: 3dvh 3dvw;
+        font-size: var(--font-size-titles);
+        color: var(--primary);
+        background-color: var(--primaryContrast);
+        cursor: pointer;
+        transition: .3s;
+    }
+    main address h2 svg{
+        width:var(--font-size-titles);
+        fill: var(--primary);
+        transition: .3s;
+    }
+    main address a,
+    main address a:hover{
+        display: block;
+        width: 100%;
+        color: var(--primary);
+        transform: scale(1);
+        background-color: none;
+        margin:1dvh 0;
+    }
+    main address a svg{
+        fill: var(--primary);
+        width: var(--icon-size-address);
+        margin-right: 7px;
+        vertical-align: bottom;
+        transition: .3s;
+    }
+    address.closed h2{
+        color: var(--primaryContrast);
+        background-color:var(--primary);
+    }
+    address.closed h2 svg{
+        fill: var(--primaryContrast);
+        transform: rotate(-90deg);
+    }
+    address.closed a{
+        max-height:0;
+        margin:0;
+        padding:0;
+    }
+}
+
+/** SECTIONS **/
+section{
+    width: 90dvw;
+    padding: 0;
+    margin: 5dvh auto;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 1px var(--primaryContrast);
+    overflow: hidden;
+}
+section h2{
+    margin:0;
+    padding:3dvh 3dvw;
+    font-size:var(--font-size-titles);
+    color:var(--primary);
+    background-color: var(--primaryContrast);
+    cursor: pointer;
+    transition: .3s;
+}
+section h2 svg{
+    width:var(--font-size-titles);
+    fill: var(--primary);
+    transition: .3s;
+}
+section div{
+    height: 'fit-content';
+    /* max-height:50dvh; */
+    padding:5dvh 5dvw;
+    overflow: hidden;
+    transition: .3s;
+}
+
+/* SECTIONS CLOSED */
+section.closed h2{
+    color: var(--primaryContrast);
+    background-color:var(--primary);
+}
+section.closed h2 svg{
+    fill: var(--primaryContrast);
+    transform: rotate(-90deg);
+}
+section.closed div{
+    max-height:0;
+    padding:0 5dvw;
+}
+
+/* SKILLS (75dvw) */
+section div article.skills-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1dvw 1dvh;
+    margin:0;
+    border-radius: 10px;
+    transition: .3s;
+}
+section div article.skills-container:hover{
+    background-color: var(--primaryContrast);
+    transform: scale(1.1);
+
+}
+section div article.skills-container h3{
+    width:20dvw;
+    margin:0;
+}
+section div article.skills-container div.bar-container{
+    display: flex;
+    width:40dvw;
+    height: 2dvh;
+    background-color: var(--lightgray);
+    padding: 0;
+    margin:0;
+    border-radius:10px;
+}
+section div article.skills-container div.bar-container div.bar{
+    background-color: var(--secondary);
+    padding: 0;
+    margin:0;
+    border-radius:10px;
+}
+section div article.skills-container label{
+    width:20dvw;
+    text-align: right;
+}
+@media only screen and (max-width: 768px) {
+    section div article.skills-container{
+        flex-wrap: wrap;
+    }
+    section div article.skills-container h3{
+        width: auto;
+    }
+    section div article.skills-container label{
+        width:75dvw;
+    }
+}

@@ -2,6 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ExperienceController;
+use App\Http\Controllers\EducationController;
+use App\Http\Controllers\SkillsController;
+ 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +20,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function (
+    AboutController $aboutController, 
+    ExperienceController $experienceController,
+    EducationController $educationController,
+    SkillsController $skillsController
+) {
+    return view('index', [
+        'about' => $aboutController->showAbout(),
+        'experience' => $experienceController->showExperience(),
+        'education' => $educationController->showEducation(),
+        'skills' => $skillsController->showSkills(),
+        'experienceSM' => $experienceController->experienceInfo(),
+        'educationSM' => $educationController->educationInfo()
+    ]);
 });
