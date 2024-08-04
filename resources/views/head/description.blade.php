@@ -1,1 +1,1 @@
-Full-Stack Developer with 10+ years of experience | Custom E-commerce & Reports Developer | JavaScript, PHP, MySQL, Back-End Optimization.
+Full-Stack Developer with 14+ years of experience | Custom E-commerce & Reports Developer | JavaScript, PHP, MySQL, Back-End Optimization.
